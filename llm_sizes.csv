@@ -1,0 +1,40 @@
+LLM,Creator,Date,Size (B)
+ELMO,Allen Institute for AI,2018-02-01,0.094
+GPT,OpenAI,2018-06-11,0.117
+BERT Base,Google,2018-10-11,0.110
+BERT Large,Google,2018-10-11,0.334
+GPT-2,OpenAI,2019-02-14,1.5
+Megatron-LM,NVIDIA,2019-09-17,8.3
+T5-11B,Google,2019-10-23,11
+RoBERTa-XLM,Facebook AI,2019-11-05,0.560
+BETO,DCC UChile,2020-01-15,0.110
+Turing-NLG,Microsoft,2020-02-14,17
+GPT-3,OpenAI,2020-05-28,175
+MarIA,Barcelona Supercomputing Center,2021-07-15,0.355
+Megatron-Turing NLG,Microsoft / NVIDIA,2021-10-05,530
+RigoBERTa,IIC,2021-11-01,0.110
+PaLM,Google,2022-04-05,540
+OPT-175B,Meta,2022-05-03,175
+BLOOM,BigScience / Hugging Face,2022-07-12,176
+LLaMA 2 70B,Meta,2023-07-18,70
+RigoBERTa 2,IIC,2023-07-21,0.560
+Falcon 180B,TII (Abu Dhabi),2023-09-06,180
+Mixtral 8x7B,Mistral AI,2023-12-09,46.7
+RigoChat,IIC,2024-01-29,7
+Llama 3 405B,Meta,2024-04-18,405
+Gemma 2 27B,Google,2024-06-27,27
+Qwen2-72B,Alibaba Cloud,2024-09-19,72
+ModernBERT,answerdotai,2024-12-19,0.395
+Phi-4,Microsoft,2024-12-12,14
+DeepSeek-R1,DeepSeek,2025-01-20,671
+Salamandra,Barcelona Supercomputing Center,2025-01-21,7
+RigoChat 2,IIC,2025-03-12,7
+Gemma 3 27B,Google,2025-03-12,27
+Llama 4 Maverick,Meta,2025-04-05,400
+Qwen3-235B-A22B,Alibaba Cloud,2025-04-28,235
+gpt-oss-120B,OpenAI,2025-08-05,120
+Qwen3-Max,Alibaba Cloud,2025-09-05,1000
+mmBERT,CLSP-JHU,2025-09-09,0.307
+Apertus,Swiss National AI Initiative,2025-09-02,70
+DeepSeek-3.2,DeepSeek,2025-12-01,685
+ALIA,Barcelona Supercomputing Center,2025-12-19,40
