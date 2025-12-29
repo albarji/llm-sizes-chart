@@ -1,6 +1,10 @@
 import colorcet as cc
+import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
+
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVR
 
 df = pd.read_csv("llm_sizes.csv")
 
@@ -57,5 +61,23 @@ fig.update_layout(
     xaxis=dict(tickfont=dict(size=18)),
     yaxis=dict(tickfont=dict(size=18))
 )
+
+# Add trend line
+X = df["Date"].map(pd.Timestamp.timestamp).values.reshape(-1, 1)
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+y = np.log10(df["Size (B)"].astype(float).values)
+svr = SVR(C=1e2).fit(X, y)
+
+X_fit = np.linspace(X.min(), X.max(), 100).reshape(-1, 1)
+y_fit = svr.predict(X_fit)
+
+fig.add_trace(go.Scatter(
+    x=pd.to_datetime(scaler.inverse_transform(X_fit).flatten(), unit="s"),
+    y=10**y_fit,
+    mode="lines",
+    line=dict(color="black", dash="dash"),
+    name="Trend"
+))
 
 fig.write_image("llm_sizes_chart.png", width=1600, height=900)
