@@ -118,7 +118,7 @@ fig.update_layout(
     xaxis_title={"text": "Publication date", "font": dict(size=22)},
     yaxis_title={"text": "Number of parameters (billions, log scale)", "font": dict(size=22)},
     template="plotly_white",
-    legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.4),
+    legend=dict(orientation="h", yanchor="bottom", y=-0.30, xanchor="center", x=0.4),
     yaxis_type="log",
     xaxis=dict(tickfont=dict(size=18)),
     yaxis=dict(tickfont=dict(size=18)),

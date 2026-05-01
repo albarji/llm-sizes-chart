@@ -41,3 +41,5 @@ MrBERT,Barcelona Supercomputing Center,2026-02-24,0.308,Encoder
 Qwen3.5-397B-A17B,Alibaba Cloud,2026-02-16,397,Decoder
 GLM-5.1,Zhipu AI,2026-02-17,754,Decoder
 DeepSeek-V4-Pro,DeepSeek,2026-04-23,1600,Decoder
+FLAN,Google,2021-10-06,137,Decoder
+Alpaca,Stanford University,2023-03-13,7,Decoder
