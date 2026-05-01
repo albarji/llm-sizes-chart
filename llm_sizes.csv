@@ -43,3 +43,4 @@ GLM-5.1,Zhipu AI,2026-02-17,754,Decoder
 DeepSeek-V4-Pro,DeepSeek,2026-04-23,1600,Decoder
 FLAN,Google,2021-10-06,137,Decoder
 Alpaca,Stanford University,2023-03-13,7,Decoder
+Chinchilla,DeepMind,2022-03-29,70,Decoder
