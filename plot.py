@@ -28,7 +28,7 @@ alternate_text_positions = {
     "PaLM": "top center",
     "Qwen3-Max": "top center",
     "Megatron-LM": "middle left",
-    "OPT-175B": "middle left",
+    "OPT-175B": "bottom center",
     "Qwen2-72B": "top center",
     "RigoBERTa 2": "top center",
     "MarIA": "top center",
@@ -47,6 +47,9 @@ alternate_text_positions = {
     "Qwen3.5-397B-A17B": "bottom center",
     "GLM-5.1": "middle right",
     "DeepSeek-V4-Pro": "top center",
+    "BLOOM": "top right",
+    "InstructGPT": "top left",
+    "FLAN": "middle left",
 }
 
 fig = go.Figure()
