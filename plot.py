@@ -1,5 +1,6 @@
 import colorcet as cc
 import pandas as pd
+from PIL import Image
 import plotly.graph_objects as go
 
 from trend import compute_trend
@@ -117,10 +118,37 @@ fig.update_layout(
     xaxis_title={"text": "Publication date", "font": dict(size=22)},
     yaxis_title={"text": "Number of parameters (billions, log scale)", "font": dict(size=22)},
     template="plotly_white",
-    legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.5),
+    legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.4),
     yaxis_type="log",
     xaxis=dict(tickfont=dict(size=18)),
-    yaxis=dict(tickfont=dict(size=18))
+    yaxis=dict(tickfont=dict(size=18)),
+)
+
+fig.add_layout_image(
+    dict(
+        source=Image.open("assets/cc-by-4.0.png"),
+        x=1,
+        y=-0.25,
+        xanchor="right",
+        yanchor="bottom",
+        sizex=0.11,
+        sizey=0.11,
+        sizing="contain",
+        layer="above"
+    )
+)
+
+fig.add_annotation(
+    xref="paper",
+    yref="paper",
+    x=1,
+    y=-0.155,
+    xanchor="right",
+    yanchor="bottom",
+    text="Álvaro Barbero Jiménez",
+    showarrow=False,
+    font=dict(size=13, color="black"),
+    align="right"
 )
 
 fig.write_image("llm_sizes_chart.png", width=1600, height=900)
