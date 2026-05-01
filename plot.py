@@ -38,9 +38,14 @@ alternate_text_positions = {
     "gpt-oss-120B": "middle left",
     "LLaMA 2 70B": "bottom left",
     "DeepSeek-R1": "top center",
-    "DeepSeek-3.2": "top center",
-    "Llama 4 Maverick": "middle right",
-    "Qwen3-235B-A22B": "middle right",
+    "DeepSeek-3.2": "middle left",
+    "Llama 4 Maverick": "middle left",
+    "Qwen3-235B-A22B": "middle left",
+    "GPT-3": "top center",
+    "Llama 3 405B": "middle left",
+    "Qwen3.5-397B-A17B": "bottom center",
+    "GLM-5.1": "middle right",
+    "DeepSeek-V4-Pro": "top center",
 }
 
 fig = go.Figure()
@@ -87,7 +92,6 @@ for creator in creators:
             size=16,
             color=color_map[creator],
             symbol=symbol_map[creator],
-            # line=[{"width": 2 if arch == "Encoder" else 0, "color": 'DarkSlateGrey'} for arch in group["Architecture"]]
         ),
         name=creator
     ))
@@ -109,7 +113,7 @@ for creator in creators:
     ))
 
 fig.update_layout(
-    title={"text": "Large Language Model (LLM) Sizes Over Time (2018-2025)", "font": dict(size=28)},
+    title={"text": "Large Language Model (LLM) Sizes Over Time (2018-2026)", "font": dict(size=28)},
     xaxis_title={"text": "Publication date", "font": dict(size=22)},
     yaxis_title={"text": "Number of parameters (billions, log scale)", "font": dict(size=22)},
     template="plotly_white",

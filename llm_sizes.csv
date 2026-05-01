@@ -36,3 +36,8 @@ mmBERT,CLSP-JHU,2025-09-09,0.307,Encoder
 Apertus,Swiss National AI Initiative,2025-09-02,70,Decoder
 DeepSeek-3.2,DeepSeek,2025-12-01,685,Decoder
 ALIA,Barcelona Supercomputing Center,2025-12-19,40,Decoder
+Gemma 4 31B,Google,2026-04-08,31,Decoder
+MrBERT,Barcelona Supercomputing Center,2026-02-24,0.308,Encoder
+Qwen3.5-397B-A17B,Alibaba Cloud,2026-02-16,397,Decoder
+GLM-5.1,Zhipu AI,2026-02-17,754,Decoder
+DeepSeek-V4-Pro,DeepSeek,2026-04-23,1600,Decoder
